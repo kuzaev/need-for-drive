@@ -1,0 +1,12 @@
+@import "normalize";
+@import "fonts";
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto";
+}
