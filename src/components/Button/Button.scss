@@ -1,0 +1,89 @@
+@import "../../assets/styles/variables";
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 14px 48px;
+  border-radius: 8px;
+  border: 0;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    hsl(148, 87, 41) 60%,
+    hsl(158, 97, 32) 100%
+  );
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  outline: none;
+
+  &__inner {
+    position: relative;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-image: linear-gradient(
+      to right,
+      hsl(148, 87, 31) 60%,
+      hsl(158, 97, 22) 100%
+    );
+    transition: opacity 0.2s;
+    z-index: 2;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-image: linear-gradient(
+      to right,
+      hsl(148, 87, 21) 60%,
+      hsl(157, 95, 13) 100%
+    );
+    transition: opacity 0.2s;
+    z-index: 2;
+  }
+
+  &--disabled {
+      background-image: none;
+      background-color: $main-gray-light;
+  }
+
+  &--loading {
+    padding: 10px 48px;
+  }
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+
+.button--disabled:hover:before,
+.button--loading:hover:before {
+    opacity: 0;
+}
+
+.button:focus:before {
+  opacity: 1;
+}
+
+.button:active:after {
+  opacity: 1;
+}
