@@ -1,0 +1,23 @@
+@import "../../assets/styles/variables";
+
+.link {
+  display: inline-block;
+  color: $main-gray-light;
+  text-decoration: none;
+  transition: 0.2s;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.link svg {
+  fill: $main-gray-light;
+  transition: 0.2s;
+}
+
+.link:hover {
+  color: $main-accent;
+}
+
+.link:hover svg {
+  fill: $main-accent;
+}
