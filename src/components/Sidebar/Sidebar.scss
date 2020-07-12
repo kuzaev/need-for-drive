@@ -1,0 +1,56 @@
+.sidebar {
+  color: #fff;
+  background: rgba(21, 27, 31, 0.81);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 64px;
+  transition: 0.5s;
+  display: flex;
+}
+
+.sidebar--collapsed-false {
+  width: 100%;
+}
+
+.sidebar__main {
+  width: 64px;
+  flex-shrink: 0;
+  background-color: #111518;
+  z-index: 1;
+}
+
+.sidebar__extra {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transform: scale(0);
+  transform-origin: left center;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.sidebar__extra--collapsed-false {
+  transform: scale(1);
+}
+
+.sidebar__burger {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  right: 0;
+  bottom: 0;
+  transition: 0.7s;
+}
+
+.sidebar-backdrop.sidebar-backdrop--collapsed-true {
+  width: 0;
+}
