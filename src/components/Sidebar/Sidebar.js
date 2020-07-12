@@ -25,11 +25,7 @@ const Sidebar = ({ className, backdropClassName }) => {
       >
         <SidebarMenu />
       </div>
-      <div
-        className={classNames("sidebar-backdrop", {
-          "sidebar-backdrop--collapsed-true": collapsed,
-        })}
-      >
+      <div className="sidebar-backdrop">
         <div className={classNames("sidebar-backdrop__inner", backdropClassName)}></div>
       </div>
     </div>
