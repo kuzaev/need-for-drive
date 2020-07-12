@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 
-import { Burger } from "../../components";
+import { Burger, SidebarMenu } from "../../components";
 import "./Sidebar.scss";
 
 const Sidebar = ({ className, backdropClassName }) => {
@@ -23,7 +23,7 @@ const Sidebar = ({ className, backdropClassName }) => {
           "sidebar__extra--collapsed-false": !collapsed,
         })}
       >
-        Меню
+        <SidebarMenu />
       </div>
       <div
         className={classNames(
