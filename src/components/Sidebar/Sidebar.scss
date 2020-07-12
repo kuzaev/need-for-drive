@@ -44,7 +44,7 @@
 
 .sidebar-backdrop {
   position: absolute;
-  left: 0;
+  left: 64px;
   top: 0;
   background: transparent;
   right: 0;
@@ -54,4 +54,8 @@
 
 .sidebar-backdrop.sidebar-backdrop--collapsed-true {
   width: 0;
+}
+
+.sidebar-backdrop__inner {
+  height: 100%;
 }
