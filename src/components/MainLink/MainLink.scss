@@ -7,6 +7,7 @@
   transition: 0.2s;
   font-family: "Roboto";
   font-weight: 400;
+  outline: none;
 }
 
 .link svg {
@@ -14,10 +15,14 @@
   transition: 0.2s;
 }
 
-.link:hover {
+.link--active,
+.link:hover,
+.link:focus {
   color: $main-accent;
 }
 
-.link:hover svg {
+.link--active svg,
+.link:hover svg,
+.link:focus svg {
   fill: $main-accent;
 }

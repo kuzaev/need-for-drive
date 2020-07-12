@@ -22,7 +22,7 @@ const MainLink = ({ children, to, className, exact, external }) => {
 
   return (
     <React.Fragment>
-      <Link to={to} className={classNames("link", className, { active: match })}>
+      <Link to={to} className={classNames("link", className, { "link--active": match })}>
         {children}
       </Link>
     </React.Fragment>
