@@ -3,10 +3,12 @@
   display: flex;
 }
 
-.main__sidebar {
-  width: 64px;
-}
-
 .main__body {
   flex: 1;
+  padding-left: 64px;
+}
+
+.main__sidebar-backdrop--home {
+  width: 50%;
+  background: #111518;
 }
