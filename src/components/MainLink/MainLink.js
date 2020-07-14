@@ -4,14 +4,20 @@ import classNames from "classnames";
 
 import "./MainLink.scss";
 
-const MainLink = ({ children, to, className, exact, external, type, target }) => {
+const MainLink = ({ children, to, className, exact, external, type, target, mode }) => {
   let match = useRouteMatch({ path: to, exact });
 
   if (external) {
     return (
       <a
         href={to}
-        className={classNames("link", className, { "link--button": type === "button" })}
+        className={classNames(
+          "link",
+          className,
+          { "link--button": type === "button" },
+          { "link--mode-dark": mode === "dark" },
+          { "link--mode-dark-green": mode === "dark-green" }
+        )}
         target={target === "_blank" && target}
         rel="noopener noreferrer"
       >

@@ -93,4 +93,12 @@
       opacity: 1;
     }
   }
+
+  &--mode-dark {
+    color: $main-black;
+
+    & svg {
+      fill: $main-black;
+    }
+  }
 }
