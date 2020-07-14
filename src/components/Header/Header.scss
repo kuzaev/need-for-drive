@@ -1,0 +1,15 @@
+@import "../../assets/styles/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: $main-accent;
+    text-decoration: none;
+    outline: none;
+  }
+}
