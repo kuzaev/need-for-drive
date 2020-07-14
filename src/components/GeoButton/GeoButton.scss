@@ -1,0 +1,35 @@
+@import "../../assets/styles/variables";
+
+.geo-button {
+  display: flex;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &__icon {
+    fill: transparent;
+    stroke: $main-gray;
+    transition: 0.5s;
+  }
+  &__city {
+    font-family: "Roboto";
+    color: $main-gray;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 8px;
+    transition: 0.5s;
+  }
+
+  &:hover,
+  &:focus {
+    & .geo-button__icon {
+      stroke: $main-accent;
+    }
+
+    & .geo-button__city {
+      color: $main-accent;
+    }
+  }
+}
