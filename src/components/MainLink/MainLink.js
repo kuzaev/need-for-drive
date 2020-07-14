@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import "./MainLink.scss";
 
-const MainLink = ({ children, to, className, exact, external, type }) => {
+const MainLink = ({ children, to, className, exact, external, type, target }) => {
   let match = useRouteMatch({ path: to, exact });
 
   if (external) {
@@ -12,7 +12,7 @@ const MainLink = ({ children, to, className, exact, external, type }) => {
       <a
         href={to}
         className={classNames("link", className, { "link--button": type === "button" })}
-        target="_blank"
+        target={target === "_blank" && target}
         rel="noopener noreferrer"
       >
         {children}
