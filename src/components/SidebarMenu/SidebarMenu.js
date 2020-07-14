@@ -33,17 +33,32 @@ const SidebarMenu = () => {
       </ul>
       <ul className="sidebar-menu__socials">
         <li className="sidebar-menu__social-item">
-          <MainLink className="sidebar-menu__social-link" to="https://telegram.org" external>
+          <MainLink
+            className="sidebar-menu__social-link"
+            to="https://telegram.org"
+            external
+            target="_blank"
+          >
             <TelegramIcon />
           </MainLink>
         </li>
         <li className="sidebar-menu__social-item">
-          <MainLink className="sidebar-menu__social-link" to="https://www.facebook.com" external>
+          <MainLink
+            className="sidebar-menu__social-link"
+            to="https://www.facebook.com"
+            external
+            target="_blank"
+          >
             <FacebookIcon />
           </MainLink>
         </li>
         <li className="sidebar-menu__social-item">
-          <MainLink className="sidebar-menu__social-link" to="https://www.instagram.com/" external>
+          <MainLink
+            className="sidebar-menu__social-link"
+            to="https://www.instagram.com/"
+            external
+            target="_blank"
+          >
             <InstagramIcon />
           </MainLink>
         </li>
