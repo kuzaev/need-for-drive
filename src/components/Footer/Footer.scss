@@ -1,0 +1,19 @@
+@import "../../assets/styles/variables";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__tel {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  &__copyright {
+    font-size: 13px;
+    line-height: 13px;
+    color: $main-gray;
+    margin: 0;
+  }
+}
