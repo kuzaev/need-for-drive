@@ -2,6 +2,7 @@ import React from "react";
 
 import { Header, Footer, MainLink } from "../../components";
 import "./Home.scss";
+import HomeSlider from "../HomeSlider";
 
 const Home = () => {
   return (
@@ -23,8 +24,7 @@ const Home = () => {
         <Footer className="hero__footer" />
       </div>
 
-      <div className="home__slider"></div>
-      
+      <HomeSlider className="home__slider"/>
     </div>
   );
 };

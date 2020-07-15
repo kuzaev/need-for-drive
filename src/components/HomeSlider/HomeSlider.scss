@@ -1,0 +1,83 @@
+@import "../../assets/styles/variables";
+
+.home-slider {
+  position: relative;
+  width: 50%;
+}
+
+.home-slider .slick-list,
+.home-slider .slick-track {
+  height: 100%;
+}
+
+.home-slider .slick-slide,
+.home-slider .slick-slide > div {
+  height: 100%;
+}
+
+.home-slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.home-slider-button.home-slider-button--prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.home-slider-button.home-slider-button--next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 64px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.home-slider-button:hover {
+  background-color: rgba($color: $main-accent, $alpha: 0.2);
+}
+
+.home-slider-button__icon {
+  stroke: $main-gray-light;
+}
+
+.home-slider-dot {
+  width: 8px;
+  height: 8px;
+  background-color: $main-gray-light;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home-slider-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 32px;
+  right: 0;
+}
+
+.home-slider-dots__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.home-slider-dots__list li {
+  padding: 0 4px;
+}
+
+.home-slider-dots__list li.slick-active .home-slider-dot {
+  background-color: $main-accent;
+}
