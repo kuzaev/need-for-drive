@@ -5,6 +5,10 @@
   height: 100%;
   position: relative;
   background-size: cover;
+  @media (max-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .home-slider-slide:before {
@@ -20,6 +24,10 @@
 .home-slider-slide__content {
   position: relative;
   padding: 237px 96px 0;
+
+  @media (max-width: $desktop) {
+    padding: 0 64px;
+  }
 }
 
 .home-slider-slide__title {
@@ -28,6 +36,11 @@
   font-size: 40px;
   line-height: 47px;
   margin: 0;
+
+  @media (max-width: $desktop) {
+    font-size: 32px;
+    line-height: normal;
+  }
 }
 
 .home-slider-slide__text {
@@ -36,6 +49,11 @@
   font-size: 24px;
   line-height: 24px;
   margin: 8px 0 0 0;
+
+  @media (max-width: $desktop) {
+    font-size: 22px;
+    line-height: 1;
+  }
 }
 
 .home-slider-slide__link {

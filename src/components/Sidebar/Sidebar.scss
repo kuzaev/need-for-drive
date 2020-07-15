@@ -1,3 +1,5 @@
+@import "../../assets/styles/variables";
+
 .sidebar {
   color: #fff;
   background: rgba(21, 27, 31, 0.81);
@@ -9,10 +11,27 @@
   transition: 0.5s;
   display: flex;
   z-index: 10;
+
+  @media (max-width: $tablet) {
+    width: 86px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 0;
+    pointer-events: none;
+  }
 }
 
 .sidebar--collapsed-false {
   width: 100%;
+  @media (max-width: $mobile) {
+    pointer-events: all;
+
+    .sidebar__switcher {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
 }
 
 .sidebar__main {
@@ -23,22 +42,49 @@
   flex-shrink: 0;
   background-color: #111518;
   z-index: 1;
+
+  @media (max-width: $tablet) {
+    width: 86px;
+  }
+
+  @media (max-width: $mobile) {
+    background-color: transparent;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
 }
 
 .sidebar__switcher {
   margin-top: auto;
   margin-bottom: 14px;
+
+  @media (max-width: $mobile) {
+    opacity: 0;
+  }
 }
 
 .sidebar__extra {
   width: 100%;
-  padding-left: 32px;
+  padding-left: 64px;
   display: flex;
   align-items: center;
   transform: scale(0);
   transform-origin: left center;
   transition: 0.5s;
   z-index: 1;
+
+  @media (max-width: $desktop) {
+    padding-left: 32px;
+  }
+
+  @media (max-width: $mobile) {
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: 80px;
+    width: auto;
+    padding-left: 0;
+  }
 }
 
 .sidebar__extra--collapsed-false {
@@ -49,8 +95,22 @@
   margin-top: 36px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: $mobile) {
+    margin-top: 20px;
+    pointer-events: all;
+  }
 }
 
+@media (max-width: $mobile) {
+  .sidebar__burger .burger .burger__line {
+    background-color: $main-black;
+  }
+
+  .sidebar__burger .burger--close .burger__line {
+    background-color: #fff;
+  }
+}
 .sidebar-backdrop {
   position: absolute;
   left: 64px;
@@ -59,6 +119,10 @@
   right: 0;
   bottom: 0;
   transition: 0.7s;
+
+  @media (max-width: $mobile) {
+    left: 0;
+  }
 }
 
 .sidebar-backdrop__inner {

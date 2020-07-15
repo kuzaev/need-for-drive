@@ -7,11 +7,26 @@
 
 .home__hero {
   width: 50%;
+
+  @media (max-width: $desktop) {
+    width: 58%;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .home__slider {
   width: 50%;
-  background: rgb(99, 30, 30);
+
+  @media (max-width: $desktop) {
+    width: 42%;
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .hero {
@@ -19,21 +34,53 @@
   flex-direction: column;
 
   &__header {
-    padding: 30px 32px;
+    padding: 30px 64px;
+
+    @media (max-width: $desktop) {
+      padding: 30px 32px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 16px 16px 0;
+    }
   }
 
   &__footer {
     margin-top: auto;
-    padding: 30px 32px;
+    padding: 30px 64px;
+
+    @media (max-width: $desktop) {
+      padding: 30px 32px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 16px;
+    }
   }
 
   &__button {
     margin-top: 60px;
+
+    @media (max-width: $mobile) {
+      margin-top: 32px;
+      border-radius: 0;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__content {
     margin-top: 132px;
-    padding: 0 32px;
+    padding: 0 64px;
+
+    @media (max-width: $desktop) {
+      padding: 0 32px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0;
+      margin-top: 34px;
+    }
   }
 
   &__title {
@@ -42,11 +89,20 @@
     font-size: 70px;
     color: $main-black;
     margin: 0;
+
+    @media (max-width: $mobile) {
+      font-size: 32px;
+      padding: 0 16px;
+    }
   }
 
   &__title-text {
-    display: flex;
+    display: block;
     line-height: 66px;
+
+    @media (max-width: $mobile) {
+      line-height: 1;
+    }
   }
 
   &__title-text:not(:first-child) {
@@ -64,5 +120,12 @@
     font-weight: 300;
     font-size: 26px;
     line-height: 31px;
+
+    @media (max-width: $mobile) {
+      margin: 16px 0 0 0;
+      line-height: normal;
+      font-size: 18px;
+      padding: 0 16px;
+    }
   }
 }

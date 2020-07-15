@@ -8,6 +8,15 @@
   &__tel {
     font-size: 13px;
     line-height: 16px;
+
+    @media (max-width: $mobile) {
+      order: 1;
+      color: $main-accent;
+
+      &:hover {
+        color: $main-gray-light;
+      }
+    }
   }
 
   &__copyright {
@@ -15,5 +24,17 @@
     line-height: 13px;
     color: $main-gray;
     margin: 0;
+
+    @media (max-width: $mobile) {
+      order: 2;
+      margin-top: 8px;
+      color: $main-gray-light;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    background-color: #151b1f;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }

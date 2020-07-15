@@ -29,7 +29,10 @@ const HomeSliderDot = ({ onClick }) => {
 const HomeSliderPrevArrow = ({ className, style, onClick }) => {
   return (
     <div
-      className={classNames("home-slider-button home-slider-button--prev", className)}
+      className={classNames(
+        "home-slider-button home-slider-button--prev",
+        className
+      )}
       onClick={onClick}
     >
       <ArrowLeft className="home-slider-button__icon" />
@@ -40,7 +43,10 @@ const HomeSliderPrevArrow = ({ className, style, onClick }) => {
 const HomeSliderNextArrow = ({ className, style, onClick }) => {
   return (
     <div
-      className={classNames("home-slider-button home-slider-button--next", className)}
+      className={classNames(
+        "home-slider-button home-slider-button--next",
+        className
+      )}
       onClick={onClick}
     >
       <ArrowRight className="home-slider-button__icon" />
@@ -99,11 +105,13 @@ const HomeSlider = ({ className }) => {
   };
 
   return (
-    <Slider className="home-slider" {...settings}>
-      {slides.map((slide) => (
-        <HomeSliderSlide key={slide.id} {...slide} />
-      ))}
-    </Slider>
+    <div className={className}>
+      <Slider className="home-slider" {...settings}>
+        {slides.map((slide) => (
+          <HomeSliderSlide key={slide.id} {...slide} />
+        ))}
+      </Slider>
+    </div>
   );
 };
 

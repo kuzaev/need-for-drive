@@ -2,7 +2,7 @@
 
 .home-slider {
   position: relative;
-  width: 50%;
+  height: 100%;
 }
 
 .home-slider .slick-list,
@@ -20,26 +20,24 @@
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+  width: 64px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+
+  @media (max-width: $desktop) {
+    width: 32px;
+  }
 }
 
 .home-slider-button.home-slider-button--prev {
-  position: absolute;
-  top: 0;
   left: 0;
-  bottom: 0;
-  width: 64px;
-  z-index: 1;
-  cursor: pointer;
 }
 
 .home-slider-button.home-slider-button--next {
-  position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
-  width: 64px;
-  z-index: 1;
-  cursor: pointer;
 }
 
 .home-slider-button:hover {
