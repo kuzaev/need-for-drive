@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 
-import { Burger, SidebarMenu } from "../../components";
+import { Burger, SidebarMenu, LanguageSwitcher } from "../../components";
 import "./Sidebar.scss";
 
 const Sidebar = ({ className, backdropClassName }) => {
@@ -16,6 +16,9 @@ const Sidebar = ({ className, backdropClassName }) => {
       <div className="sidebar__main">
         <div className="sidebar__burger">
           <Burger onClick={toggleCollapsed} isClose={!collapsed} />
+        </div>
+        <div className="sidebar__switcher">
+          <LanguageSwitcher />
         </div>
       </div>
       <div

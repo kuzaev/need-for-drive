@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables";
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $main-accent;
+  font-weight: 700;
+  font-size: 13px;
+  width: 47px;
+  height: 47px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+
+.language-switcher:hover,
+.language-switcher:focus {
+  border-color: $main-gray-light;
+  color: $main-gray-light;
+}
+
+.language-switcher:active {
+  border-color: $main-gray-light;
+  color: $main-accent;
+}

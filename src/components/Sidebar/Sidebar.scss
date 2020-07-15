@@ -16,10 +16,18 @@
 }
 
 .sidebar__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 64px;
   flex-shrink: 0;
   background-color: #111518;
   z-index: 1;
+}
+
+.sidebar__switcher {
+  margin-top: auto;
+  margin-bottom: 14px;
 }
 
 .sidebar__extra {
