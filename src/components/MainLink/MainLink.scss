@@ -92,6 +92,42 @@
     &:active:after {
       opacity: 1;
     }
+
+    &-turquoise {
+      background-image: linear-gradient(to right, hsl(216, 58, 18) 10%, hsl(169, 83, 26) 100%);
+
+      &:before {
+        background-image: linear-gradient(to right, hsl(216, 58, 14) 10%, hsl(169, 83, 22) 100%);
+      }
+
+      &:after {
+        background-image: linear-gradient(to right, hsl(216, 58, 10) 10%, hsl(169, 83, 18) 100%);
+      }
+    }
+
+    &-pink {
+      background-image: linear-gradient(to right, hsl(32, 58, 18) 10%, hsl(335, 83, 26) 100%);
+
+      &:before {
+        background-image: linear-gradient(to right, hsl(32, 58, 14) 10%, hsl(335, 83, 22) 100%);
+      }
+
+      &:after {
+        background-image: linear-gradient(to right, hsl(32, 58, 10) 10%, hsl(335, 83, 18) 100%);
+      }
+    }
+
+    &-violet {
+      background-image: linear-gradient(to right, hsl(263, 58, 18) 10%, hsl(295, 83, 26) 100%);
+
+      &:before {
+        background-image: linear-gradient(to right, hsl(263, 58, 14) 10%, hsl(295, 83, 22) 100%);
+      }
+
+      &:after {
+        background-image: linear-gradient(to right, hsl(263, 58, 10) 10%, hsl(295, 83, 18) 100%);
+      }
+    }
   }
 
   &--mode-dark {
