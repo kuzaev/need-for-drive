@@ -1,0 +1,53 @@
+@import "../../assets/styles/variables";
+
+.sidebar-menu {
+  padding-top: 70px;
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+  }
+}
+
+.sidebar-menu__nav {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu__nav-item:not(:first-child) {
+  margin-top: 15px;
+}
+
+.sidebar-menu__nav-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet) {
+    font-size: 28px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 22px;
+  }
+}
+
+.sidebar-menu__socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-top: 38px;
+}
+
+.sidebar-menu__social-item {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+}
+
+.sidebar-menu__social-item:last-child {
+  margin-right: 0;
+}
