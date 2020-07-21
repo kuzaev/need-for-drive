@@ -11,3 +11,4 @@ export { default as Footer } from "./Footer";
 export { default as LanguageSwitcher } from "./LanguageSwitcher";
 export { default as HomeSlider } from "./HomeSlider";
 export { default as HomeSliderSlide } from "./HomeSliderSlide";
+export { default as Order } from "./Order";
