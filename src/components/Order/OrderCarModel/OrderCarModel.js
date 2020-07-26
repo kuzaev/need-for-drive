@@ -10,44 +10,46 @@ import sonataImage from "../../../assets/images/cars/sonata.png";
 const OrderCarModel = () => {
   return (
     <div className="order-car-model">
-      <div className="form form--row">
-        <div className="form__group">
-          <input
-            id="all"
-            value="all"
-            name="models-show"
-            type="radio"
-            className="form__control"
-          />
-          <label className="form__label" htmlFor="all">
-            Все модели
-          </label>
-        </div>
+      <div className="form">
+        <div className="form__row">
+          <div className="form__group">
+            <input
+              id="all"
+              value="all"
+              name="models-show"
+              type="radio"
+              className="form__control"
+            />
+            <label className="form__label" htmlFor="all">
+              Все модели
+            </label>
+          </div>
 
-        <div className="form__group">
-          <input
-            id="economic"
-            value="economic"
-            name="models-show"
-            type="radio"
-            className="form__control"
-          />
-          <label className="form__label" htmlFor="economic">
-            Эконом
-          </label>
-        </div>
+          <div className="form__group">
+            <input
+              id="economic"
+              value="economic"
+              name="models-show"
+              type="radio"
+              className="form__control"
+            />
+            <label className="form__label" htmlFor="economic">
+              Эконом
+            </label>
+          </div>
 
-        <div className="form__group">
-          <input
-            id="models-show-premium"
-            value="premium"
-            name="models-show"
-            type="radio"
-            className="form__control"
-          />
-          <label className="form__label" htmlFor="models-show-premium">
-            Премиум
-          </label>
+          <div className="form__group">
+            <input
+              id="models-show-premium"
+              value="premium"
+              name="models-show"
+              type="radio"
+              className="form__control"
+            />
+            <label className="form__label" htmlFor="models-show-premium">
+              Премиум
+            </label>
+          </div>
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { Header } from "../../components";
 import OrderLocation from "./OrderLocation";
 import OrderCarModel from "./OrderCarModel";
+import OrderExtra from "./OrderExtra";
 import OrderBreadcrumbs from "./OrderBreadcrumbs";
 import OrderInfo from "./OrderInfo";
 
@@ -22,6 +23,9 @@ const Order = () => {
             </Route>
             <Route path="/order/model">
               <OrderCarModel />
+            </Route>
+            <Route path="/order/extra">
+              <OrderExtra />
             </Route>
             <Redirect to="/order/location" />
           </Switch>
