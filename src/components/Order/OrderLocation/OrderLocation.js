@@ -19,6 +19,7 @@ const OrderLocation = ({ className }) => {
             type="text"
             className="form__control"
             placeholder="Начните вводить город"
+            autocomplete="off"
           />
         </div>
         <div className="form__group form__group--order-location">
@@ -33,6 +34,7 @@ const OrderLocation = ({ className }) => {
             type="text"
             className="form__control"
             placeholder="Начните вводить пункт выдачи"
+            autocomplete="off"
           />
         </div>
       </div>
