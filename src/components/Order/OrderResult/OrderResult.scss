@@ -1,0 +1,61 @@
+@import "../../../assets/styles/variables";
+
+.order-result {
+  display: flex;
+  justify-content: space-between;
+  max-width: 736px;
+  width: 100%;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    color: $main-black;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__plate-number {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    color: $main-black;
+    border: 1px solid $main-gray;
+    border-radius: 4px;
+  }
+
+  &__info-list {
+    margin: 8px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__info-item {
+    margin: 8px 0 0 0;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &-key {
+      font-size: 14px;
+      line-height: 16px;
+      color: $main-black;
+      font-weight: 700;
+    }
+
+    &-value {
+      font-size: 14px;
+      line-height: 16px;
+      color: $main-black;
+      font-weight: 300;
+    }
+  }
+}

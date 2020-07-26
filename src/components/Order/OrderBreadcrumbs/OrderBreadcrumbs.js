@@ -20,7 +20,7 @@ const OrderBreadcrumbs = ({ className }) => {
           Дополнительно
         </NavLink>
         <CaretRight className="order-breadcrumbs__separator" />
-        <NavLink to="/order/total" className="order-breadcrumbs__item">
+        <NavLink to="/order/result" className="order-breadcrumbs__item">
           Итого
         </NavLink>
       </div>
