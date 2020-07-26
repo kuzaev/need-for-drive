@@ -5,6 +5,7 @@ import { Header } from "../../components";
 import OrderLocation from "./OrderLocation";
 import OrderCarModel from "./OrderCarModel";
 import OrderExtra from "./OrderExtra";
+import OrderResult from "./OrderResult";
 import OrderBreadcrumbs from "./OrderBreadcrumbs";
 import OrderInfo from "./OrderInfo";
 
@@ -26,6 +27,9 @@ const Order = () => {
             </Route>
             <Route path="/order/extra">
               <OrderExtra />
+            </Route>
+            <Route path="/order/result">
+              <OrderResult />
             </Route>
             <Redirect to="/order/location" />
           </Switch>
