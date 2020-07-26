@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 import { Header } from "../../components";
 import OrderLocation from "./OrderLocation";
+import OrderCarModel from "./OrderCarModel";
 import OrderBreadcrumbs from "./OrderBreadcrumbs";
 import OrderInfo from "./OrderInfo";
 
@@ -18,6 +19,9 @@ const Order = () => {
           <Switch>
             <Route path="/order/location">
               <OrderLocation />
+            </Route>
+            <Route path="/order/model">
+              <OrderCarModel />
             </Route>
             <Redirect to="/order/location" />
           </Switch>
