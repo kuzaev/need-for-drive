@@ -1,0 +1,51 @@
+@import "../../../assets/styles/variables";
+
+.order-car-model {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 736px;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid $main-gray-light;
+    padding: 16px;
+    cursor: pointer;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+
+    &--active {
+      border-color: $main-accent;
+    }
+
+    &:hover {
+      border-color: $main-gray;
+    }
+
+    &-title {
+      color: $main-black;
+      font-size: 18px;
+      line-height: normal;
+    }
+
+    &-price {
+      color: $main-gray;
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    &-image {
+      margin-top: 36px;
+      margin-left: auto;
+      max-width: 100%;
+    }
+  }
+}
