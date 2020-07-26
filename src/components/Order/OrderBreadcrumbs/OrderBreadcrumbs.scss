@@ -1,0 +1,37 @@
+@import "../../../assets/styles/variables";
+
+.order-breadcrumbs {
+  border-top: 1px solid $main-gray-light;
+  border-bottom: 1px solid $main-gray-light;
+  padding: 5px 0;
+
+  &__container {
+    max-width: 1376px;
+    margin: 0 auto;
+    padding: 0 64px;
+
+    @media (max-width: $desktop) {
+      padding: 0 32px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0 16px;
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $main-gray;
+    text-decoration: none;
+
+    &.active {
+      color: $main-accent;
+    }
+  }
+
+  &__separator {
+    margin: 0 16px;
+  }
+}

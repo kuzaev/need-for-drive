@@ -30,6 +30,7 @@
     position: relative;
     z-index: 3;
     pointer-events: none;
+    text-align: center;
   }
 
   &--button {
@@ -43,11 +44,29 @@
     font-size: 18px;
     line-height: 20px;
     color: #fff;
-    background-image: linear-gradient(to right, hsl(148, 87, 41) 60%, hsl(158, 97, 32) 100%);
+    background-image: linear-gradient(
+      to right,
+      hsl(148, 87, 41) 60%,
+      hsl(158, 97, 32) 100%
+    );
     cursor: pointer;
     z-index: 1;
     overflow: hidden;
     outline: none;
+
+    &.link--disabled {
+      background-image: none;
+      background-color: $main-gray-light;
+      pointer-events: none;
+
+      &:before {
+        content: none;
+      }
+
+      &:after {
+        content: none;
+      }
+    }
 
     &:before {
       content: "";
@@ -57,7 +76,11 @@
       bottom: 0;
       left: 0;
       opacity: 0;
-      background-image: linear-gradient(to right, hsl(148, 87, 31) 60%, hsl(158, 97, 22) 100%);
+      background-image: linear-gradient(
+        to right,
+        hsl(148, 87, 31) 60%,
+        hsl(158, 97, 22) 100%
+      );
       transition: opacity 0.2s;
       z-index: 2;
     }
@@ -70,7 +93,11 @@
       bottom: 0;
       left: 0;
       opacity: 0;
-      background-image: linear-gradient(to right, hsl(148, 87, 21) 60%, hsl(157, 95, 13) 100%);
+      background-image: linear-gradient(
+        to right,
+        hsl(148, 87, 21) 60%,
+        hsl(157, 95, 13) 100%
+      );
       transition: opacity 0.2s;
       z-index: 2;
     }
@@ -94,38 +121,74 @@
     }
 
     &-turquoise {
-      background-image: linear-gradient(to right, hsl(216, 58, 18) 10%, hsl(169, 83, 26) 100%);
+      background-image: linear-gradient(
+        to right,
+        hsl(216, 58, 18) 10%,
+        hsl(169, 83, 26) 100%
+      );
 
       &:before {
-        background-image: linear-gradient(to right, hsl(216, 58, 14) 10%, hsl(169, 83, 22) 100%);
+        background-image: linear-gradient(
+          to right,
+          hsl(216, 58, 14) 10%,
+          hsl(169, 83, 22) 100%
+        );
       }
 
       &:after {
-        background-image: linear-gradient(to right, hsl(216, 58, 10) 10%, hsl(169, 83, 18) 100%);
+        background-image: linear-gradient(
+          to right,
+          hsl(216, 58, 10) 10%,
+          hsl(169, 83, 18) 100%
+        );
       }
     }
 
     &-pink {
-      background-image: linear-gradient(to right, hsl(32, 58, 18) 10%, hsl(335, 83, 26) 100%);
+      background-image: linear-gradient(
+        to right,
+        hsl(32, 58, 18) 10%,
+        hsl(335, 83, 26) 100%
+      );
 
       &:before {
-        background-image: linear-gradient(to right, hsl(32, 58, 14) 10%, hsl(335, 83, 22) 100%);
+        background-image: linear-gradient(
+          to right,
+          hsl(32, 58, 14) 10%,
+          hsl(335, 83, 22) 100%
+        );
       }
 
       &:after {
-        background-image: linear-gradient(to right, hsl(32, 58, 10) 10%, hsl(335, 83, 18) 100%);
+        background-image: linear-gradient(
+          to right,
+          hsl(32, 58, 10) 10%,
+          hsl(335, 83, 18) 100%
+        );
       }
     }
 
     &-violet {
-      background-image: linear-gradient(to right, hsl(263, 58, 18) 10%, hsl(295, 83, 26) 100%);
+      background-image: linear-gradient(
+        to right,
+        hsl(263, 58, 18) 10%,
+        hsl(295, 83, 26) 100%
+      );
 
       &:before {
-        background-image: linear-gradient(to right, hsl(263, 58, 14) 10%, hsl(295, 83, 22) 100%);
+        background-image: linear-gradient(
+          to right,
+          hsl(263, 58, 14) 10%,
+          hsl(295, 83, 22) 100%
+        );
       }
 
       &:after {
-        background-image: linear-gradient(to right, hsl(263, 58, 10) 10%, hsl(295, 83, 18) 100%);
+        background-image: linear-gradient(
+          to right,
+          hsl(263, 58, 10) 10%,
+          hsl(295, 83, 18) 100%
+        );
       }
     }
   }
