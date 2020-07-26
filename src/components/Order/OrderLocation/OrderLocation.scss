@@ -1,0 +1,25 @@
+@import "../../../assets/styles/variables";
+
+.order-location {
+  &__map {
+    margin-top: 44px;
+
+    &-title {
+      color: $main-black;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &-inner {
+      margin-top: 16px;
+      width: 100%;
+      max-width: 736px;
+      height: 352px;
+
+      @media (max-width: $tablet) {
+        max-width: 100%;
+      }
+    }
+  }
+}
