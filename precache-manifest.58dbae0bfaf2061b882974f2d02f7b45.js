@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e0cbb28f33c55ee698147597249a1fb",
+    "revision": "a86023736ced22a51f44345ee1df66d4",
     "url": "/need-for-drive/index.html"
   },
   {
-    "revision": "77cb2446a1a56f39c72b",
+    "revision": "6def27dc0e9f15df9fb5",
     "url": "/need-for-drive/static/css/2.76cf7f4f.chunk.css"
   },
   {
-    "revision": "50baae96c9cd40dcd46c",
-    "url": "/need-for-drive/static/css/main.7385802c.chunk.css"
+    "revision": "9962c62cf4fc223b4c68",
+    "url": "/need-for-drive/static/css/main.9938f9c8.chunk.css"
   },
   {
-    "revision": "77cb2446a1a56f39c72b",
-    "url": "/need-for-drive/static/js/2.46e24ea5.chunk.js"
+    "revision": "6def27dc0e9f15df9fb5",
+    "url": "/need-for-drive/static/js/2.f72fbc72.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/need-for-drive/static/js/2.46e24ea5.chunk.js.LICENSE.txt"
+    "url": "/need-for-drive/static/js/2.f72fbc72.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50baae96c9cd40dcd46c",
-    "url": "/need-for-drive/static/js/main.b0ce99b8.chunk.js"
+    "revision": "9962c62cf4fc223b4c68",
+    "url": "/need-for-drive/static/js/main.a4738ef5.chunk.js"
   },
   {
     "revision": "d626b68bd1aca0cbff82",
@@ -84,8 +84,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/need-for-drive/static/media/arrow-right.a3d081e8.svg"
   },
   {
+    "revision": "ab0f946913546b524d4d74d6ff812a9e",
+    "url": "/need-for-drive/static/media/caret-right.ab0f9469.svg"
+  },
+  {
+    "revision": "ee33b0c5076045447e39a272c446f10b",
+    "url": "/need-for-drive/static/media/checkbox.ee33b0c5.svg"
+  },
+  {
+    "revision": "bf0b7d6a8b958764c380f1c04276d2ad",
+    "url": "/need-for-drive/static/media/creta.bf0b7d6a.png"
+  },
+  {
+    "revision": "8072aa73936a10e6d0231aa837859d2f",
+    "url": "/need-for-drive/static/media/elantra.8072aa73.jpg"
+  },
+  {
     "revision": "36802e3e9efa69c93424566eb6b5da54",
     "url": "/need-for-drive/static/media/geo-icon.36802e3e.svg"
+  },
+  {
+    "revision": "3b401528555f5605c78c8f68cee58c16",
+    "url": "/need-for-drive/static/media/i30n.3b401528.png"
   },
   {
     "revision": "9d38167a41b9e56923b398ae187854e7",
@@ -114,5 +134,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3891086e20a2364778ac57b856ee4ee1",
     "url": "/need-for-drive/static/media/social-icon-telegram.3891086e.svg"
+  },
+  {
+    "revision": "c5f33d206cb85a648de56e7ebf6d5222",
+    "url": "/need-for-drive/static/media/sonata.c5f33d20.png"
   }
 ]);
